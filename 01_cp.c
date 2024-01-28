@@ -1,3 +1,11 @@
+/*
+ * This c code doing the copy functionality
+ * in kernal, it first gets user input it will 
+ * be three terms, first the command whic will be cp 
+ * second is the source directory then finaly the 
+ * destination directory ==> cp ./source ./destination
+ */
+
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
