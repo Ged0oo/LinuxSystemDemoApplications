@@ -21,13 +21,20 @@ void main(void)
 		printf("failed to fork\n");
 	else if(retPID>0)
 	{
-		printf("\nThis is the Parent\nMy PID : %d\nMy Child PID : %d\n", getpid(), retPID);
-		sleep(5);
-		printf("\nThe parent wake up\n");
+		while(1)
+		{
+
+			printf("\nThis is the Parent\nMy PID : %d\nMy Child PID : %d\n", getpid(), retPID);
+			sleep(1);
+		}
 	}
 	else if(retPID == 0)
 	{
-                printf("\nThis's the child\nMy PID : %d\nMy Parent PID : %d\n",getpid(),getppid());
-		getchar();
+		while(1)
+		{
+
+                	printf("\nThis's the child\nMy PID : %d\nMy Parent PID : %d\n",getpid(),getppid());
+			sleep(1);
+		}
 	}
 }
